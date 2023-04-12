@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" version="1.1" height="64" width="64">
+ <rect stop-color="#000000" opacity=".988" fill="none" ry="0" rx="0" height="64" width="64"></rect>
+ <g aria-label="-" fill="#f00">
+  <path fill="#f00" d="m16.841 35.369v-3.24h11.32v3.24z"></path>
+ </g>
+ <g aria-label="-" fill="#f00">
+  <path fill="#f00" d="m35.841 35.369v-3.24h11.32v3.24z"></path>
+ </g>
+</svg>

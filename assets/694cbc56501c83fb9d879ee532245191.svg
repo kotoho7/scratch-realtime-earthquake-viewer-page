@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 40" version="1.1" height="40" width="100">
+ <g transform="translate(-448.61 -932.47)">
+  <rect style="paint-order:stroke markers fill" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stop-color="#000000" fill="none" height="40" width="100" y="932.47" x="448.61"></rect>
+  <g transform="translate(431.61 -1349.5)">
+   <g shape-rendering="auto" fill-rule="evenodd">
+    <path style="font-feature-settings:normal;font-variant-alternates:normal;font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;font-variant-position:normal;font-variation-settings:normal;inline-size:0;isolation:auto;mix-blend-mode:normal;paint-order:stroke markers fill;shape-margin:0;shape-padding:0;text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-orientation:mixed;text-transform:none;white-space:normal" stop-color="#000000" image-rendering="auto" fill="#7d97b4" color-rendering="auto" color="#000000" d="m39 2286c-9.3118 0-17 7.0939-17 16s7.6882 16 17 16h56c9.3118 0 17-7.0939 17-16s-7.6882-16-17-16z"></path>
+    <path style="font-feature-settings:normal;font-variant-alternates:normal;font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;font-variant-position:normal;font-variation-settings:normal;inline-size:0;isolation:auto;mix-blend-mode:normal;paint-order:stroke markers fill;shape-margin:0;shape-padding:0;text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-orientation:mixed;text-transform:none;white-space:normal" stop-color="#000000" image-rendering="auto" fill="#31476d" color-rendering="auto" color="#000000" d="m39 2288h56c8.31 0 15 6.244 15 14s-6.69 14-15 14h-56c-8.31 0-15-6.244-15-14s6.69-14 15-14z"></path>
+   </g>
+   <g aria-label="書き出し" fill="#fff">
+    <path d="m46.212 2296.1v-0.7862h1.4834v0.7862h4.4092v1.5517h1.5381v0.9776h-1.5381v1.5996h-4.4092v0.5742h5.0928v0.9502h-5.0928v0.5879h5.9473v1.0049h-13.296v-1.0049h5.8652v-0.5879h-4.915v-0.9502h4.915v-0.5742h-4.3545v-0.9229h4.3545v-0.6767h-5.8652v-0.9776h5.8652v-0.6289h-4.3545v-0.9228zm4.4229 0.9228h-2.9395v0.6289h2.9395zm0 1.6065h-2.9395v0.6767h2.9395zm1.3604 5.2841v4.7032h-1.5107v-0.5606h-6.9727v0.5606h-1.5107v-4.7032zm-8.4834 0.9366v0.6289h6.9727v-0.6289zm0 1.5244v0.6767h6.9727v-0.6767z"></path>
+    <path d="m55.386 2297.2h4.1426q-0.22559-0.6358-0.48535-1.5108l1.5107-0.082q0.2666 0.9092 0.51953 1.5928h4.7578v1.3193h-4.2861q0.38965 0.9707 0.88184 1.9756h4.3271v1.3193h-3.6367q0.71777 1.251 1.4424 2.2422l-1.5312 0.4443q-0.79297-1.1279-1.5928-2.6865h-6.2891v-1.3193h5.6602q-0.39648-0.8408-0.81348-1.9756h-4.6074zm9.1123 10.712q-1.3125 0.096-2.4404 0.096-2.96 0-4.2861-0.5537-1.8389-0.7725-1.8389-2.4405 0-0.9365 0.5127-1.5107l1.2236 0.6699q-0.21191 0.4307-0.21191 0.8545 0 0.8613 1.1758 1.2441 1.0459 0.3418 3.1992 0.3418 1.0801 0 2.543-0.1162z"></path>
+    <path d="m75.709 2300h3.3359v-3.4043h1.5244v4.7647h-4.8604v5.0517h3.7666v-3.1514h1.5518v5.4073h-1.5518v-0.8682h-8.9756v0.8682h-1.5381v-5.4073h1.5381v3.1514h3.6846v-5.0517h-4.7715v-4.7647h1.5244v3.4043h3.2471v-4.6348h1.5244z"></path>
+    <path d="m83.693 2295.9h1.6133v8.1484q0 2.5771 2.707 2.5771 1.7842 0 2.9258-1.6474 0.73828-1.0596 1.3262-3.2813l1.3877 0.8408q-0.69726 2.4678-1.6748 3.6915-1.5381 1.9072-3.999 1.9072-2.5703 0-3.623-1.586-0.66309-0.9912-0.66309-2.5566z"></path>
+   </g>
+  </g>
+ </g>
+</svg>

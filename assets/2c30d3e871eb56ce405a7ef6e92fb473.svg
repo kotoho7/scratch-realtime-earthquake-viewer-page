@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" version="1.1" height="400" width="400">
+ <defs>
+  <radialGradient gradientUnits="userSpaceOnUse" gradientTransform="translate(-40,20)" r="200" cy="180" cx="240" id="color-1-9-8">
+   <stop offset="0" stop-color="#860b6f"></stop>
+   <stop offset=".4" stop-color="#860b6f"></stop>
+   <stop offset=".55" stop-opacity=".56078" stop-color="#860b6f"></stop>
+   <stop offset=".7" stop-opacity=".25098" stop-color="#860b6f"></stop>
+   <stop offset=".85" stop-opacity=".058824" stop-color="#860b6f"></stop>
+   <stop offset="1" stop-opacity="0" stop-color="#860b6f"></stop>
+  </radialGradient>
+ </defs>
+ <path style="mix-blend-mode:normal" stroke-width="0" stroke-miterlimit="10" fill="none" d="m0 400v-400h400v400z"></path>
+ <path style="mix-blend-mode:normal" stroke-miterlimit="10" opacity=".1" fill-rule="evenodd" fill="url(#color-1-9-8)" d="m0 200c0-110.46 89.543-200 200-200s200 89.543 200 200c0 110.46-89.543 200-200 200s-200-89.543-200-200z"></path>
+ <path style="mix-blend-mode:normal" stroke-width="13" stroke="#d855d1" fill-rule="evenodd" fill="#860b6f" d="m120 100h160c11.08 0 20 8.92 20 20v160c0 11.08-8.92 20-20 20h-160c-11.08 0-20-8.92-20-20v-160c0-11.08 8.92-20 20-20z"></path>
+ <path style="font-feature-settings:normal;font-variant-alternates:normal;font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;font-variant-position:normal;font-variation-settings:normal;inline-size:0;isolation:auto;mix-blend-mode:normal;shape-margin:0;shape-padding:0;text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-orientation:mixed;text-transform:none;white-space:normal" stop-color="#000000" shape-rendering="auto" image-rendering="auto" fill="#fff" color-rendering="auto" color="#000000" d="m200.38 143.9-0.78125 0.1836c-23.271 5.4602-40.003 16.871-49.945 34.184-5.9164 10.224-8.8984 20.568-8.8984 30.984 0 14.84 3.2101 26.49 9.75 34.842h0.00195v0.00196c8.0786 10.273 19.189 15.463 33.014 15.463 11.814 0 21.439-3.8077 28.633-11.398 6.7885-7.1421 10.201-16.139 10.201-26.791 0-10.426-3.8396-19.14-11.422-25.885l-0.00195-0.00195c-6.9204-6.127-15.32-9.209-25.025-9.209-10.78 0-19.201 3.996-25.25 11.477 1.9356-8.2231 6.3536-15.931 13.641-23.105 6.3835-6.3002 17.004-11.681 31.867-15.994l1.1348-0.32812-6.918-14.422zm-17.568 56.812c5.8924 0 10.691 1.8106 14.592 5.4648 3.9494 3.7056 5.9355 8.8575 5.9355 15.707 0 6.0491-1.6267 10.94-4.8613 14.83-4.0453 4.7852-9.0698 7.1152-15.344 7.1152-7.174 0-12.85-3.1653-17.35-9.748-2.7734-4.0566-4.1445-8.4764-4.1445-13.357 0-4.4691 1.6982-8.6078 5.2226-12.547l0.00196-0.00195 0.00195-0.00196c4.4417-5.0232 9.6794-7.4609 15.945-7.4609z"></path>
+ <path style="font-feature-settings:normal;font-variant-alternates:normal;font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;font-variant-position:normal;font-variation-settings:normal;inline-size:0;isolation:auto;mix-blend-mode:normal;shape-margin:0;shape-padding:0;text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-orientation:mixed;text-transform:none;white-space:normal" stop-color="#000000" shape-rendering="auto" image-rendering="auto" fill="#fff" color-rendering="auto" color="#000000" d="m227.13 146.76v22.969h-22.971v13.875h22.971v22.969h13.875v-22.969h22.969v-13.875h-22.969v-22.969h-1-12.875z"></path>
+</svg>

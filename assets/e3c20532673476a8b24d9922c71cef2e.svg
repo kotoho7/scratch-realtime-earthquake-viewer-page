@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 40" version="1.1" height="40" width="180">
+ <path style="paint-order:stroke markers fill" stroke-width=".2" stroke-linejoin="round" stroke-linecap="round" stop-color="#000000" fill-opacity="0" fill="none" d="m0 0h180v40h-180z"></path>
+ <g aria-label="円">
+  <path fill="#fff" d="m32.89 14.045v10.951q0 0.81348-0.43066 1.1348-0.34863 0.2666-1.1689 0.2666-1.3057 0-2.4473-0.10254l-0.30762-1.4971q1.3535 0.15723 2.29 0.15723 0.33496 0 0.43066-0.11621 0.06836-0.08887 0.06836-0.29394v-3.9033h-8.6406v5.8516h-1.5654v-12.448zm-10.206 1.333v3.9307h3.5273v-3.9307zm8.6406 3.9307v-3.9307h-3.6299v3.9307z"></path>
+ </g>
+</svg>

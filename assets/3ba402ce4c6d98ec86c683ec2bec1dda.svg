@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 60" version="1.1" height="60" width="120">
+ <rect style="paint-order:stroke markers fill" stop-color="#000000" opacity=".80769" fill="none" height="60" width="120"></rect>
+ <g aria-label="+1" fill="#fff">
+  <path d="m65.277 14.139h1.2031v4.0195h4.0195v1.2031h-4.0195v4.0195h-1.2031v-4.0195h-4.0195v-1.2031h4.0195z"></path>
+  <path d="m75.832 24.427v-9.6592q-1.4492 0.48535-2.7344 0.71777l-0.33496-1.3877q2.167-0.52637 3.5547-1.2168h1.3125v11.546z"></path>
+ </g>
+</svg>

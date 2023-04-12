@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 36" version="1.1" height="36" width="60">
+ <rect style="paint-order:stroke markers fill" stop-color="#000000" fill-opacity="0" height="36" width="60" y="1.2207e-5" x="2.4414e-6"></rect>
+ <path style="paint-order:stroke markers fill" stroke-width=".2" stroke-linejoin="round" stroke-linecap="round" stop-color="#000000" fill-rule="evenodd" fill="#458faa" d="m21 4h18c7.756 0 14 6.244 14 14s-6.244 14-14 14h-18c-7.756 0-14-6.244-14-14s6.244-14 14-14z"></path>
+ <circle style="paint-order:stroke markers fill" stop-color="#000000" fill-rule="evenodd" fill="#fff" r="10" cy="18" cx="39"></circle>
+ <path stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="#458faa" fill="none" d="m34.91 18 2.7273 2.7273 5.4545-5.4545"></path>
+</svg>
