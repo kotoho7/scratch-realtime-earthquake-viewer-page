@@ -9,7 +9,7 @@
 	"orientation": "any",
 	"icons": [
 		{
-			"src": "/appicon512.png",
+			"src": "./appicon512.png",
 			"sizes": "512x512",
 			"purpose": "maskable"
 		}
