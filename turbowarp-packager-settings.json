@@ -4,7 +4,7 @@
 	"miscLimits": false,
 	"resizeMode": "dynamic-resize",
 	"app": {
-		"windowTitle": "リアルタイム地震ビューアー v1.4.1",
+		"windowTitle": "リアルタイム地震ビューアー v1.4.2",
 		"icon": {
 			"__isBlob": true,
 			"type": "image/svg+xml",
@@ -30,8 +30,7 @@
 			"☁ c7": "ws",
 			"☁ c8": "ws",
 			"☁ c9": "ws",
-			"☁ c10": "ws",
-			"☁ eval": "ws"
+			"☁ c10": "ws"
 		},
 		"unsafeCloudBehaviors": false
 	},
