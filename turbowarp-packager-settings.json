@@ -28,7 +28,7 @@
 	},
 	"app": {
 		"packageName": "srev",
-		"windowTitle": "リアルタイム地震ビューアー v1.5.0",
+		"windowTitle": "リアルタイム地震ビューアー v1.5.1",
 		"icon": {
 			"__isBlob": true,
 			"type": "image/svg+xml",
