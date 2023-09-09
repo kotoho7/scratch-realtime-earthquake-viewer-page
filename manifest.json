@@ -1,6 +1,6 @@
 {
-	"name": "リアルタイム地震ビューアー v1.5.0",
-	"short_name": "srev 1.5.0",
+	"name": "リアルタイム地震ビューアー v1.5.1",
+	"short_name": "srev 1.5.1",
 	"description": "リアルタイム地震ビューアー",
 	"start_url": "./index.html",
 	"display": "standalone",
@@ -9,17 +9,17 @@
 	"orientation": "any",
 	"icons": [
 		{
-			"src": "./appicon512.png",
+			"src": "./appicon48.png",
 			"sizes": "48x48",
 			"purpose": "maskable"
 		},
 		{
-			"src": "./appicon512.png",
+			"src": "./appicon96.png",
 			"sizes": "96x96",
 			"purpose": "maskable"
 		},
 		{
-			"src": "./appicon512.png",
+			"src": "./appicon192.png",
 			"sizes": "192x192",
 			"purpose": "maskable"
 		},
