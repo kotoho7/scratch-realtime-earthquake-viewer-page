@@ -1,6 +1,6 @@
 {
-	"name": "リアルタイム地震ビューアー v1.5.1",
-	"short_name": "srev 1.5.1",
+	"name": "リアルタイム地震ビューアー v1.5.2",
+	"short_name": "srev 1.5.2",
 	"description": "リアルタイム地震ビューアー",
 	"start_url": "./index.html",
 	"display": "standalone",
