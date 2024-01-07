@@ -233,7 +233,7 @@
 
       {
         const providers = {};
-        providers.ws = new Scaffolding.Cloud.WebSocketProvider(["wss://clouddata.turbowarp.org","wss://clouddata-eu.turbowarp.org","wss://clouddata.turbowarp.xyz"], "636244032");
+        providers.ws = new Scaffolding.Cloud.WebSocketProvider(["wss://clouddata.turbowarp.org","wss://clouddata-eu.turbowarp.org","wss://clouddata.turbowarp.xyz"], ["636244032", "kotoho7.github.io/srev"]);
         for (const provider of Object.values(providers)) scaffolding.addCloudProvider(provider);
         scaffolding.addCloudProviderOverride("☁ url", providers[""] || null);
         scaffolding.addCloudProviderOverride("☁ open link", providers[""] || null);
