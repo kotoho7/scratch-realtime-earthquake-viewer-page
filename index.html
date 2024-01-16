@@ -231,24 +231,6 @@
       scaffolding.setUsername("player####".replace(/#/g, () => Math.floor(Math.random() * 10)));
       scaffolding.setAccentColor("#31476d");
 
-      {
-        const providers = {};
-        providers.ws = new Scaffolding.Cloud.WebSocketProvider(["wss://clouddata.turbowarp.org","wss://clouddata-eu.turbowarp.org","wss://clouddata.turbowarp.xyz"], ["636244032", "kotoho7.github.io/srev"]);
-        for (const provider of Object.values(providers)) scaffolding.addCloudProvider(provider);
-        scaffolding.addCloudProviderOverride("☁ url", providers[""] || null);
-        scaffolding.addCloudProviderOverride("☁ open link", providers[""] || null);
-        scaffolding.addCloudProviderOverride("☁ c2h", providers["ws"] || null);
-        scaffolding.addCloudProviderOverride("☁ c2b0", providers["ws"] || null);
-        scaffolding.addCloudProviderOverride("☁ c2b1", providers["ws"] || null);
-        scaffolding.addCloudProviderOverride("☁ c2b2", providers["ws"] || null);
-        scaffolding.addCloudProviderOverride("☁ c2b3", providers["ws"] || null);
-        scaffolding.addCloudProviderOverride("☁ c2b4", providers["ws"] || null);
-        scaffolding.addCloudProviderOverride("☁ c2b5", providers["ws"] || null);
-        scaffolding.addCloudProviderOverride("☁ c2b6", providers["ws"] || null);
-        scaffolding.addCloudProviderOverride("☁ c2b7", providers["ws"] || null);
-        scaffolding.addCloudProviderOverride("☁ c2u", providers["ws"] || null);
-      };
-
       vm.setTurboMode(false);
       if (vm.setInterpolation) vm.setInterpolation(false);
       if (vm.setFramerate) vm.setFramerate(60);
@@ -322,7 +304,33 @@
       })();
     </script>
   <script>
+    const csiUrl = "https://gist.githubusercontent.com/kotoho7/039aaef1782ef4a7db80f8876c5bef5f/raw/srev-csi.json";
+    const setCloudProviders = async () => {
+      const providers = {};
+      try {
+        const res = await fetch(csiUrl)
+        const csi = await res.json();
+        providers.ws = new Scaffolding.Cloud.WebSocketProvider(csi.hosts, csi.ids);
+      } catch (e) {
+        console.error(e);
+        providers.ws = new Scaffolding.Cloud.WebSocketProvider(["wss://clouddata.turbowarp.org", "wss://clouddata.turbowarp.xyz"], ["636244032", "kotoho7.github.io/srev"]);
+      }
+      for (const provider of Object.values(providers)) scaffolding.addCloudProvider(provider);
+      scaffolding.addCloudProviderOverride("☁ url", providers[""] || null);
+      scaffolding.addCloudProviderOverride("☁ open link", providers[""] || null);
+      scaffolding.addCloudProviderOverride("☁ c2h", providers["ws"] || null);
+      scaffolding.addCloudProviderOverride("☁ c2b0", providers["ws"] || null);
+      scaffolding.addCloudProviderOverride("☁ c2b1", providers["ws"] || null);
+      scaffolding.addCloudProviderOverride("☁ c2b2", providers["ws"] || null);
+      scaffolding.addCloudProviderOverride("☁ c2b3", providers["ws"] || null);
+      scaffolding.addCloudProviderOverride("☁ c2b4", providers["ws"] || null);
+      scaffolding.addCloudProviderOverride("☁ c2b5", providers["ws"] || null);
+      scaffolding.addCloudProviderOverride("☁ c2b6", providers["ws"] || null);
+      scaffolding.addCloudProviderOverride("☁ c2b7", providers["ws"] || null);
+      scaffolding.addCloudProviderOverride("☁ c2u", providers["ws"] || null);
+    };
     const run = async () => {
+      await setCloudProviders();
       const projectData = await getProjectData();
       await scaffolding.loadProject(projectData);
       setProgress(1);
