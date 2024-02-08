@@ -22,13 +22,13 @@
 		}
 	},
 	"monitors": {
-		"editableLists": true,
+		"editableLists": false,
 		"variableColor": "#404040",
 		"listColor": "#404040"
 	},
 	"app": {
 		"packageName": "srev",
-		"windowTitle": "リアルタイム地震ビューアー v1.5.2",
+		"windowTitle": "リアルタイム地震ビューアー v1.6.0",
 		"icon": {
 			"__isBlob": true,
 			"type": "image/svg+xml",
@@ -61,8 +61,8 @@
 	"extensions": [
 		"https://extensions.turbowarp.org/local-storage.js",
 		"https://extensions.turbowarp.org/CubesterYT/WindowControls.js",
-		"https://extensions.turbowarp.org/cursor.js",
 		"https://extensions.turbowarp.org/obviousAlexC/SensingPlus.js",
+		"https://extensions.turbowarp.org/cursor.js",
 		"https://extensions.turbowarp.org/runtime-options.js"
 	],
 	"turbo": false,
