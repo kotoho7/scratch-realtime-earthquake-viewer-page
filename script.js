@@ -51,6 +51,11 @@ async openConnection(){
     }
 }
 async checkRooms(){
+    try {
+        const res = await fetch("https://gist.githubusercontent.com/kotoho7/039aaef1782ef4a7db80f8876c5bef5f/raw/srev-csi.json", { mode: "cors"})
+        const csi = await res.json();
+        this.cloudHosts = csi.hosts;
+    } catch (e) {}
     const status = await this.getRoomId()
     if (status) {
         this.closeAndReconnect()
@@ -65,10 +70,9 @@ async getRoomId(){
             for (let element of this.cloudHosts) {
                 if (element.includes(string)) { return element; }
             }
-            return this.cloudHosts[0];
+            throw new Error(`Could not find ${string}`);
         }
-        const url = `${find("srev").replace("wss://", "https://")}/rooms`;
-        const res = await fetch(url);
+        const res = await fetch(`${find("srev").replace("wss://", "https://")}/rooms`, { mode: "cors"});
         const list = await res.json();
         return list.sort((a, b) => a.clients - b.clients)[0].id;
     } catch (e) {
