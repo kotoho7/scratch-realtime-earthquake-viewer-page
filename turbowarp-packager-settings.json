@@ -5,10 +5,9 @@
 	"miscLimits": false,
 	"resizeMode": "dynamic-resize",
 	"autoplay": true,
-	"projectId": "636244032",
 	"appearance": {
 		"accent": "#31476d",
-		"background": "#000000",
+		"background": "#12151a",
 		"foreground": "#ffffff"
 	},
 	"loadingScreen": {
@@ -30,7 +29,7 @@
 	"target": "zip",
 	"app": {
 		"packageName": "srev",
-		"windowTitle": "リアルタイム地震ビューアー v1.6.1",
+		"windowTitle": "リアルタイム地震ビューアー v1.6.2",
 		"icon": {
 			"__isBlob": true,
 			"type": "image/svg+xml",
@@ -39,7 +38,8 @@
 		},
 		"windowMode": "window",
 		"version": "1.0.0",
-		"escapeBehavior": "unfullscreen-only"
+		"escapeBehavior": "unfullscreen-only",
+		"windowControls": "default"
 	},
 	"cloudVariables": {
 		"mode": "custom",
@@ -69,6 +69,7 @@
 	"stageHeight": 360,
 	"username": "player####",
 	"closeWhenStopped": false,
+	"projectId": "636244032",
 	"custom": {
 		"css": "",
 		"js": ""
@@ -91,7 +92,7 @@
 		"enabled": true,
 		"warpTimer": false
 	},
-	"packagedRuntime": true,
+	"packagedRuntime": false,
 	"chunks": {
 		"gamepad": false,
 		"pointerlock": false
@@ -107,9 +108,13 @@
 	"extensions": [
 		"https://extensions.turbowarp.org/local-storage.js",
 		"https://extensions.turbowarp.org/CubesterYT/WindowControls.js",
+		"https://gist.githubusercontent.com/kotoho7/a5ad1fbc827b8f7de2a7d8402b50c690/raw/srevExtension.min.js",
 		"https://extensions.turbowarp.org/cursor.js",
-		"https://gist.githubusercontent.com/kotoho7/a5ad1fbc827b8f7de2a7d8402b50c690/raw/srevExtension.js",
-		"https://extensions.turbowarp.org/runtime-options.js"
+		"https://extensions.turbowarp.org/Lily/LooksPlus.js",
+		"https://extensions.turbowarp.org/runtime-options.js",
+		"https://extensions.turbowarp.org/Lily/Assets.js",
+		"https://extensions.turbowarp.org/TheShovel/ColorPicker.js",
+		"https://extensions.turbowarp.org/files.js"
 	],
 	"bakeExtensions": true,
 	"maxTextureDimension": 2048

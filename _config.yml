@@ -1,2 +1,5 @@
 plugins:
   - jekyll-sitemap
+exclude:
+  - "*.md"
+  - "turbowarp-*.json"
