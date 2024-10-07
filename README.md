@@ -58,6 +58,15 @@ Webアプリケーションのため、[ウェブサイト](https://kotoho7.gith
 > [!WARNING]
 > ただし、動作の安定性や信頼性は一切保証できないため、利用者の自己責任で使用してください。
 
+### Chromeでの使用について
+
+Chrome では、ウィンドウが重なると見えないウィンドウの動作が停止する場合があります。
+
+1. `chrome://flags/#calculate-native-win-occlusion` アドレスバーに入力しアクセス
+1. `Calculate window occlusion on Windows` を `Disable` に設定
+
+これにより、ウィンドウが重なっても動作が継続します。
+
 ### 問い合わせ
 
 このプロジェクトに関する問い合わせは以下の場所で対応できます。
