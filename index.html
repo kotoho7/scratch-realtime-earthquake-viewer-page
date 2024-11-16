@@ -1,362 +1,192 @@
 <!DOCTYPE html>
 <!-- Created with https://packager.turbowarp.org/ -->
 <html>
-<head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-X7WPBQ5B08"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-  
-    gtag('config', 'G-X7WPBQ5B08');
-  </script>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <!-- We only include this to explicitly loosen the CSP of various packager environments. It does not provide any security. -->
-  <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: blob:">
-  <title>リアルタイム地震ビューアー v1.6.2</title>
-  <style>
-    body {
-      color: #ffffff;
-      font-family: sans-serif;
-      overflow: hidden;
-      margin: 0;
-      padding: 0;
-    }
-    :root, body.is-fullscreen {
-      background-color: #000000;
-    }
-    [hidden] {
-      display: none !important;
-    }
-    h1 {
-      font-weight: normal;
-    }
-    a {
-      color: inherit;
-      text-decoration: underline;
-      cursor: pointer;
-    }
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+		/>
+		<!-- We only include this to explicitly loosen the CSP of various packager environments. It does not provide any security. -->
+		<meta
+			http-equiv="Content-Security-Policy"
+			content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: blob:"
+		/>
+		<title>リアルタイム地震ビューアー v1.6.3</title>
+		<style>
+			body {
+				color: #ffffff;
+				font-family: sans-serif;
+				overflow: hidden;
+				margin: 0;
+				padding: 0;
+			}
+			:root, body.is-fullscreen {
+				background-color: #000000;
+			}
+			[hidden] {
+				display: none !important;
+			}
+			h1 {
+				font-weight: normal;
+			}
+			a {
+				color: inherit;
+				text-decoration: underline;
+				cursor: pointer;
+			}
 
-    #app, #loading, #error, #launch {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
-    .screen {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      cursor: default;
-      user-select: none;
-      -webkit-user-select: none;
-      background-color: #000000;
-    }
-    #launch {
-      background-color: rgba(0, 0, 0, 0.7);
-      cursor: pointer;
-    }
-    .green-flag {
-      width: 80px;
-      height: 80px;
-      padding: 16px;
-      border-radius: 100%;
-      background: rgba(255, 255, 255, 0.75);
-      border: 3px solid hsla(0, 100%, 100%, 1);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      box-sizing: border-box;
-    }
-    #loading {
-      background-image: url("./images/loading.jpg");
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-position: center;
-    }
-    .progress-bar-outer {
-      border: 1px solid currentColor;
-      height: 10px;
-      width: 200px;
-      max-width: 200px;
-    }
-    .progress-bar-inner {
-      height: 100%;
-      width: 0;
-      background-color: currentColor;
-    }
-    .loading-text, noscript {
-      font-weight: normal;
-      font-size: 36px;
-      margin: 0 0 16px;
-    }
-    .loading-image {
-      margin: 0 0 16px;
-    }
-    #error-message, #error-stack {
-      font-family: monospace;
-      max-width: 600px;
-      white-space: pre-wrap;
-      user-select: text;
-      -webkit-user-select: text;
-    }
-    #error-stack {
-      text-align: left;
-      max-height: 200px;
-      overflow: auto;
-    }
-    .control-button {
-      width: 2rem;
-      height: 2rem;
-      padding: 0.375rem;
-      margin-top: 0.5rem;
-      margin-bottom: 0.5rem;
-      user-select: none;
-      -webkit-user-select: none;
-      cursor: pointer;
-      border: 0;
-      border-radius: 4px;
-    }
-    .control-button-highlight:hover {
-      background: #31476d26;
-    }
-    .control-button-highlight.active {
-      background: #31476d59;
-    }
-    .fullscreen-button {
-      background: white;
-    }
-    .standalone-fullscreen-button {
-      position: absolute;
-      top: 0;
-      right: 0;
-      background-color: rgba(0, 0, 0, 0.5);
-      border-radius: 0 0 0 4px;
-      padding: 4px;
-      cursor: pointer;
-    }
-    .sc-canvas {
-      cursor: auto;
-    }
-    .sc-monitor-root[data-opcode^="data_"] .sc-monitor-value-color {
-      background-color: #404040;
-    }
-    .sc-monitor-row-value-outer {
-      background-color: #404040;
-    }
-    .sc-monitor-row-value-editing .sc-monitor-row-value-outer {
-      background-color: #262626;
-    }
-    
-  </style>
-  <meta name="theme-color" content="#12151a">
-  <link rel="icon" href="./images/icon.svg">
-  <link rel="manifest" href="./manifest.json" crossorigin="use-credentials">
-  <link rel="apple-touch-icon" href="./images/appicon512.webp">
+			#app, #loading, #error, #launch {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+			}
+			.screen {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				text-align: center;
+				cursor: default;
+				user-select: none;
+				-webkit-user-select: none;
+				background-color: #000000;
+			}
+			#launch {
+				background-color: rgba(0, 0, 0, 0.7);
+				cursor: pointer;
+			}
+			.green-flag {
+				width: 80px;
+				height: 80px;
+				padding: 16px;
+				border-radius: 100%;
+				background: rgba(255, 255, 255, 0.75);
+				border: 3px solid hsla(0, 100%, 100%, 1);
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				box-sizing: border-box;
+			}
+			#loading {
+				background-image: url("./images/loading.jpg");
+				background-repeat: no-repeat;
+				background-size: contain;
+				background-position: center;
+			}
+			.progress-bar-outer {
+				border: 1px solid currentColor;
+				height: 10px;
+				width: 200px;
+				max-width: 200px;
+			}
+			.progress-bar-inner {
+				height: 100%;
+				width: 0;
+				background-color: currentColor;
+			}
+			.loading-text, noscript {
+				font-weight: normal;
+				font-size: 36px;
+				margin: 0 0 16px;
+			}
+			.loading-image {
+				margin: 0 0 16px;
+			}
+			#error-message, #error-stack {
+				font-family: monospace;
+				max-width: 600px;
+				white-space: pre-wrap;
+				user-select: text;
+				-webkit-user-select: text;
+			}
+			#error-stack {
+				text-align: left;
+				max-height: 200px;
+				overflow: auto;
+			}
+			.control-button {
+				width: 2rem;
+				height: 2rem;
+				padding: 0.375rem;
+				margin-top: 0.5rem;
+				margin-bottom: 0.5rem;
+				user-select: none;
+				-webkit-user-select: none;
+				cursor: pointer;
+				border: 0;
+				border-radius: 4px;
+			}
+			.control-button-highlight:hover {
+				background: #31476d26;
+			}
+			.control-button-highlight.active {
+				background: #31476d59;
+			}
+			.fullscreen-button {
+				background: white;
+			}
+			.standalone-fullscreen-button {
+				position: absolute;
+				top: 0;
+				right: 0;
+				background-color: rgba(0, 0, 0, 0.5);
+				border-radius: 0 0 0 4px;
+				padding: 4px;
+				cursor: pointer;
+			}
+			.sc-canvas {
+				cursor: auto;
+			}
+			.sc-monitor-root[data-opcode^="data_"] .sc-monitor-value-color {
+				background-color: #404040;
+			}
+			.sc-monitor-row-value-outer {
+				background-color: #404040;
+			}
+			.sc-monitor-row-value-editing .sc-monitor-row-value-outer {
+				background-color: #262626;
+			}
+		</style>
+		<meta name="theme-color" content="#12151a" />
+		<meta
+			name="description"
+			content="リアルタイムに地震関連情報を閲覧できるアプリです。気象庁が発表する地震情報・緊急地震速報・津波情報等を地図上に表示し、リアルタイムに更新されます。基本的に操作不要で、全自動で各情報が表示されます。"
+		/>
+		<link rel="icon" href="./images/icon.svg" />
+		<link rel="manifest" href="./manifest.json" crossorigin="use-credentials" />
+		<link rel="apple-touch-icon" href="./images/appicon512.webp" />
+		<script type="module" crossorigin src="./index.js"></script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-X7WPBQ5B08"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-X7WPBQ5B08');
+	</script>
 </head>
-<body>
-  <div id="app"></div>
+	<body>
+		<div id="app"></div>
 
-  <div id="loading" class="screen">
-    <noscript>Enable JavaScript</noscript>
-    
-    
-    <div class="progress-bar-outer"><div class="progress-bar-inner" id="loading-inner"></div></div>
-  </div>
+		<div id="loading" class="screen">
+			<noscript>Enable JavaScript</noscript>
 
-  <div id="error" class="screen" hidden>
-    <h1>Error</h1>
-    <details>
-      <summary id="error-message"></summary>
-      <p id="error-stack"></p>
-    </details>
-  </div>
+			<div class="progress-bar-outer">
+				<div class="progress-bar-inner" id="loading-inner"></div>
+			</div>
+		</div>
 
-  <script src="script.js"></script>
-  <script>
-    const appElement = document.getElementById('app');
-    const launchScreen = document.getElementById('launch');
-    const loadingScreen = document.getElementById('loading');
-    const loadingInner = document.getElementById('loading-inner');
-    const errorScreen = document.getElementById('error');
-    const errorScreenMessage = document.getElementById('error-message');
-    const errorScreenStack = document.getElementById('error-stack');
+		<div id="error" class="screen" hidden>
+			<h1>Error</h1>
+			<details>
+				<summary id="error-message"></summary>
+				<p id="error-stack"></p>
+			</details>
+		</div>
 
-    const handleError = (error) => {
-      console.error(error);
-      if (!errorScreen.hidden) return;
-      errorScreen.hidden = false;
-      errorScreenMessage.textContent = '' + error;
-      let debug = error && error.stack || 'no stack';
-      debug += '\nUser agent: ' + navigator.userAgent;
-      errorScreenStack.textContent = debug;
-    };
-    const setProgress = (progress) => {
-      if (loadingInner) loadingInner.style.width = progress * 100 + '%';
-    };
-    const interpolate = (a, b, t) => a + t * (b - a);
 
-    try {
-      setProgress(0.1);
-
-      const scaffolding = new Scaffolding.Scaffolding();
-      scaffolding.width = 480;
-      scaffolding.height = 360;
-      scaffolding.resizeMode = "dynamic-resize";
-      scaffolding.editableLists = false;
-      scaffolding.usePackagedRuntime = false;
-      scaffolding.setup();
-      scaffolding.appendTo(appElement);
-      const providers = {};
-      scaffolding.addCloudProviderOverride("☁ url", providers[""] || null);
-      scaffolding.addCloudProviderOverride("☁ open link", providers[""] || null);
-      scaffolding.addCloudProviderOverride("☁ eval", providers[""] || null);
-
-      const vm = scaffolding.vm;
-      window.scaffolding = scaffolding;
-      window.vm = scaffolding.vm;
-      window.Scratch = {
-        vm,
-        renderer: vm.renderer,
-        audioEngine: vm.runtime.audioEngine,
-        bitmapAdapter: vm.runtime.v2BitmapAdapter,
-        videoProvider: vm.runtime.ioDevices.video.provider
-      };
-
-      scaffolding.setUsername("player####".replace(/#/g, () => Math.floor(Math.random() * 10)));
-      scaffolding.setAccentColor("#31476d");
-
-      vm.setTurboMode(false);
-      if (vm.setInterpolation) vm.setInterpolation(false);
-      if (vm.setFramerate) vm.setFramerate(60);
-      if (vm.renderer.setUseHighQualityRender) vm.renderer.setUseHighQualityRender(true);
-      if (vm.setRuntimeOptions) vm.setRuntimeOptions({
-        fencing: true,
-        miscLimits: false,
-        maxClones: 9999999999,
-      });
-      if (vm.setCompilerOptions) vm.setCompilerOptions({
-        enabled: true,
-        warpTimer: false
-      });
-      if (vm.renderer.setMaxTextureDimension) vm.renderer.setMaxTextureDimension(2048);
-
-      if (typeof ScaffoldingAddons !== 'undefined') {
-        ScaffoldingAddons.run(scaffolding, {"gamepad":false,"pointerlock":false,"specialCloudBehaviors":true,"unsafeCloudBehaviors":true,"pause":false});
-      }
-
-      scaffolding.setExtensionSecurityManager({
-        getSandboxMode: () => 'unsandboxed',
-        canLoadExtensionFromProject: () => true
-      });
-
-    } catch (e) {
-      handleError(e);
-    }
-  </script>
-  
-  
-    <script>
-      const getProjectData = (function() {
-        const storage = scaffolding.storage;
-        storage.onprogress = (total, loaded) => {
-          setProgress(interpolate(0.2, 0.98, loaded / total));
-        };
-        
-        storage.addWebStore(
-          [
-            storage.AssetType.ImageVector,
-            storage.AssetType.ImageBitmap,
-            storage.AssetType.Sound,
-            storage.AssetType.Font
-          ].filter(i => i),
-          (asset) => new URL('./assets/' + asset.assetId + '.' + asset.dataFormat, location).href
-        );
-        return () => new Promise((resolve, reject) => {
-        const xhr = new XMLHttpRequest();
-        xhr.onload = () => {
-          resolve(xhr.response);
-        };
-        xhr.onerror = () => {
-          if (location.protocol === 'file:') {
-            reject(new Error('Zip environment must be used from a website, not from a file URL.'));
-          } else {
-            reject(new Error('Request to load project data failed.'));
-          }
-        };
-        xhr.onprogress = (e) => {
-          if (e.lengthComputable) {
-            setProgress(interpolate(0.1, 0.2, e.loaded / e.total));
-          }
-        };
-        xhr.responseType = 'arraybuffer';
-        xhr.open('GET', "./assets/project.json");
-        xhr.send();
-      });
-      })();
-    </script>
-  <script>
-    const getExtensions = async () => {
-      const res = await fetch("extensions-cache.json");
-      const extensions = await res.json();
-      for (const extension of extensions) {
-        scaffolding.vm.extensionManager.loadExtensionURL(extension);
-      }
-    }
-    const csiUrl = "https://gist.githubusercontent.com/kotoho7/039aaef1782ef4a7db80f8876c5bef5f/raw/srev-csi.json";
-    const setCloudProviders = async () => {
-      const providers = {};
-      try {
-        const res = await fetch(csiUrl)
-        const csi = await res.json();
-        providers.ws = new Scaffolding.Cloud.WebSocketProvider(csi.hosts, csi.ids);
-      } catch (e) {
-        console.error(e);
-        providers.ws = new Scaffolding.Cloud.WebSocketProvider(["wss://clouddata.turbowarp.org", "wss://clouddata.turbowarp.xyz"], ["kotoho7.github.io/srev", "kotoho7.github.io/srev/2"]);
-      }
-      for (const provider of Object.values(providers)) scaffolding.addCloudProvider(provider);
-      scaffolding.addCloudProviderOverride("☁ c2h", providers["ws"] || null);
-      scaffolding.addCloudProviderOverride("☁ c2b0", providers["ws"] || null);
-      scaffolding.addCloudProviderOverride("☁ c2b1", providers["ws"] || null);
-      scaffolding.addCloudProviderOverride("☁ c2b2", providers["ws"] || null);
-      scaffolding.addCloudProviderOverride("☁ c2b3", providers["ws"] || null);
-      scaffolding.addCloudProviderOverride("☁ c2b4", providers["ws"] || null);
-      scaffolding.addCloudProviderOverride("☁ c2b5", providers["ws"] || null);
-      scaffolding.addCloudProviderOverride("☁ c2b6", providers["ws"] || null);
-      scaffolding.addCloudProviderOverride("☁ c2b7", providers["ws"] || null);
-      scaffolding.addCloudProviderOverride("☁ c2u", providers["ws"] || null);
-    };
-    const registServiceWorker = async () => {
-      if (!("serviceWorker" in navigator)) { return; }
-      try {
-        const res = await fetch("./hash");
-        const hash = await res.text();
-        console.log(`Version hash: ${hash}`);
-        
-        await navigator.serviceWorker.register("./sw.js")
-        console.log(`Registered service worker`);
-      }
-      catch (e) {
-        console.warn(`Failed to register service worker`);
-        console.warn(e);
-      };
-    }
-    const run = async () => {
-      await registServiceWorker();
-      await getExtensions();
-      await setCloudProviders();
-      const projectData = await getProjectData();
-      await scaffolding.loadProject(projectData);
-      setProgress(1);
-      loadingScreen.hidden = true;
-      scaffolding.start();
-    };
-    run().catch(handleError);
-  </script>
-</body>
+	</body>
 </html>

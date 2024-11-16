@@ -1,131 +1,131 @@
 {
-	"name": "リアルタイム地震ビューアー",
-	"short_name": "リアルタイム地震ビューアー",
-	"start_url": "./",
-	"display": "standalone",
-	"theme_color": "#12151a",
-	"background_color": "#000000",
-	"icons": [
-		{
-			"src": "./images/appicon.svg",
-			"sizes": "any",
-			"type": "image/svg+xml",
-			"purpose": "maskable"
-		},
-		{
-			"src": "./images/appicon48.webp",
-			"sizes": "48x48",
-			"type": "image/webp",
-			"purpose": "maskable"
-		},
-		{
-			"src": "./images/appicon96.webp",
-			"sizes": "96x96",
-			"type": "image/webp",
-			"purpose": "maskable"
-		},
-		{
-			"src": "./images/appicon144.webp",
-			"sizes": "144x144",
-			"type": "image/webp",
-			"purpose": "maskable"
-		},
-		{
-			"src": "./images/appicon192.webp",
-			"sizes": "192x192",
-			"type": "image/webp",
-			"purpose": "maskable"
-		},
-		{
-			"src": "./images/appicon512.webp",
-			"sizes": "512x512",
-			"type": "image/webp",
-			"purpose": "maskable"
-		},
-		{
-			"src": "./images/appicon192.webp",
-			"sizes": "192x192",
-			"type": "image/webp",
-			"purpose": "any"
-		},
-		{
-			"src": "./images/appicon512.webp",
-			"sizes": "512x512",
-			"type": "image/webp",
-			"purpose": "any"
-		}
-	],
-	"description": "リアルタイムに地震関連情報を閲覧できるアプリです。\n気象庁が発表する地震情報・緊急地震速報・津波情報等を地図上に表示し、リアルタイムに更新されます。基本的に操作不要で、全自動で各情報が表示されます。",
-	"screenshots": [
-		{
-			"src": "./images/tab0_wide.png",
-			"sizes": "960x720",
-			"type": "image/png",
-			"form_factor": "wide",
-			"label": "気象庁の最新地震情報を表示する`地震情報タブ`"
-		},
-		{
-			"src": "./images/tab1_wide.png",
-			"sizes": "960x720",
-			"type": "image/png",
-			"form_factor": "wide",
-			"label": "リアルタイムデータを表示する`リアルタイムタブ`"
-		},
-		{
-			"src": "./images/tab2_wide.png",
-			"sizes": "960x720",
-			"type": "image/png",
-			"form_factor": "wide",
-			"label": "津波予報と観測値を表示する`津波情報タブ`"
-		},
-		{
-			"src": "./images/tab3_wide.png",
-			"sizes": "960x720",
-			"type": "image/png",
-			"form_factor": "wide",
-			"label": "震度速報や震源情報もリアルタイム更新されます"
-		},
-		{
-			"src": "./images/tab4_wide.png",
-			"sizes": "960x720",
-			"type": "image/png",
-			"form_factor": "wide",
-			"label": "揺れ検出や緊急地震速報を表示します"
-		},
-		{
-			"src": "./images/tab0_narrow.png",
-			"sizes": "460x920",
-			"type": "image/png",
-			"form_factor": "narrow",
-			"label": "気象庁の最新地震情報を表示する`地震情報タブ`"
-		},
-		{
-			"src": "./images/tab1_narrow.png",
-			"sizes": "460x920",
-			"type": "image/png",
-			"form_factor": "narrow",
-			"label": "リアルタイムデータを表示する`リアルタイムタブ`"
-		},
-		{
-			"src": "./images/tab2_narrow.png",
-			"sizes": "460x920",
-			"type": "image/png",
-			"form_factor": "narrow",
-			"label": "津波予報と観測値を表示する`津波情報タブ`"
-		},
-		{
-			"src": "./images/tab3_narrow.png",
-			"sizes": "460x920",
-			"type": "image/png",
-			"form_factor": "narrow",
-			"label": "震度速報や震源情報もリアルタイム更新されます"
-		},
-		{
-			"src": "./images/tab4_narrow.png",
-			"sizes": "460x920",
-			"type": "image/png",
-			"form_factor": "narrow",
-			"label": "揺れ検出や緊急地震速報を表示します"
-		}
-	]
+  "background_color": "#000000",
+  "description": "リアルタイムに地震関連情報を閲覧できるアプリです。\n気象庁が発表する地震情報・緊急地震速報・津波情報等を地図上に表示し、リアルタイムに更新されます。基本的に操作不要で、全自動で各情報が表示されます。",
+  "display": "standalone",
+  "icons": [
+    {
+      "purpose": "maskable",
+      "sizes": "any",
+      "src": "./images/appicon.svg",
+      "type": "image/svg+xml"
+    },
+    {
+      "purpose": "maskable",
+      "sizes": "48x48",
+      "src": "./images/appicon48.webp",
+      "type": "image/webp"
+    },
+    {
+      "purpose": "maskable",
+      "sizes": "96x96",
+      "src": "./images/appicon96.webp",
+      "type": "image/webp"
+    },
+    {
+      "purpose": "maskable",
+      "sizes": "144x144",
+      "src": "./images/appicon144.webp",
+      "type": "image/webp"
+    },
+    {
+      "purpose": "maskable",
+      "sizes": "192x192",
+      "src": "./images/appicon192.webp",
+      "type": "image/webp"
+    },
+    {
+      "purpose": "maskable",
+      "sizes": "512x512",
+      "src": "./images/appicon512.webp",
+      "type": "image/webp"
+    },
+    {
+      "purpose": "any",
+      "sizes": "192x192",
+      "src": "./images/appicon192.webp",
+      "type": "image/webp"
+    },
+    {
+      "purpose": "any",
+      "sizes": "512x512",
+      "src": "./images/appicon512.webp",
+      "type": "image/webp"
+    }
+  ],
+  "name": "リアルタイム地震ビューアー",
+  "screenshots": [
+    {
+      "form_factor": "wide",
+      "label": "気象庁の最新地震情報を表示する`地震情報タブ`",
+      "sizes": "960x720",
+      "src": "./images/tab0_wide.png",
+      "type": "image/png"
+    },
+    {
+      "form_factor": "narrow",
+      "label": "気象庁の最新地震情報を表示する`地震情報タブ`",
+      "sizes": "460x920",
+      "src": "./images/tab0_narrow.png",
+      "type": "image/png"
+    },
+    {
+      "form_factor": "wide",
+      "label": "リアルタイムデータを表示する`リアルタイムタブ`",
+      "sizes": "960x720",
+      "src": "./images/tab1_wide.png",
+      "type": "image/png"
+    },
+    {
+      "form_factor": "narrow",
+      "label": "リアルタイムデータを表示する`リアルタイムタブ`",
+      "sizes": "460x920",
+      "src": "./images/tab1_narrow.png",
+      "type": "image/png"
+    },
+    {
+      "form_factor": "wide",
+      "label": "津波予報と観測値を表示する`津波情報タブ`",
+      "sizes": "960x720",
+      "src": "./images/tab2_wide.png",
+      "type": "image/png"
+    },
+    {
+      "form_factor": "narrow",
+      "label": "津波予報と観測値を表示する`津波情報タブ`",
+      "sizes": "460x920",
+      "src": "./images/tab2_narrow.png",
+      "type": "image/png"
+    },
+    {
+      "form_factor": "wide",
+      "label": "震度速報や震源情報もリアルタイム更新されます",
+      "sizes": "960x720",
+      "src": "./images/tab3_wide.png",
+      "type": "image/png"
+    },
+    {
+      "form_factor": "narrow",
+      "label": "震度速報や震源情報もリアルタイム更新されます",
+      "sizes": "460x920",
+      "src": "./images/tab3_narrow.png",
+      "type": "image/png"
+    },
+    {
+      "form_factor": "wide",
+      "label": "揺れ検出や緊急地震速報を表示します",
+      "sizes": "960x720",
+      "src": "./images/tab4_wide.png",
+      "type": "image/png"
+    },
+    {
+      "form_factor": "narrow",
+      "label": "揺れ検出や緊急地震速報を表示します",
+      "sizes": "460x920",
+      "src": "./images/tab4_narrow.png",
+      "type": "image/png"
+    }
+  ],
+  "short_name": "リアルタイム地震ビューアー",
+  "start_url": "./",
+  "theme_color": "#12151a"
 }
