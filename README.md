@@ -6,7 +6,7 @@
 
 > [!NOTE]
 > このアプリケーションはScratchで作成した[リアルタイム地震ビューアー](https://scratch.mit.edu/projects/636244032)を[Turbowarp Packager](https://packager.turbowarp.org/#636244032)でパッケージ化したものです。  
-> このプロジェクトはScratchで共有されているため、[/assets](https://github.com/kotoho7/scratch-realtime-earthquake-viewer-page/tree/main/assets) にある画像や音声は [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/deed.ja) になります。
+> このプロジェクトはScratchで共有されているため、[/docs/assets](./docs/assets) にある画像や音声は [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/deed.ja) になります。
 
 ## 概要
 
