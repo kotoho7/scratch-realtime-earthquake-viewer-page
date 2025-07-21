@@ -4,7 +4,7 @@
   "scripts": {
     "tauri": "tauri",
     "custom-icon": "tauri icon src-tauri/icon-desktop.svg",
-    "custom-js": "sed -i -E 's/=fetch/=window.__TAURI__.http.fetch/g; s/.serviceWorker. ?in navigator/false/g; $r src-tauri/fullscreen.js' docs/index.js"
+    "custom-js": "sed -i -E 's/globalThis\\.fetch\\.bind\\(globalThis\\)/window.__TAURI__.http.fetch/g; s/.serviceWorker. ?in navigator/false/g; $r src-tauri/fullscreen.js' docs/index.js"
   },
   "dependencies": {
     "@tauri-apps/plugin-http": "^2.5.0",
