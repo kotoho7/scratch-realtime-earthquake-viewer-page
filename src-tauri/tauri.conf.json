@@ -1,0 +1,51 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "srev-desktop",
+  "version": "1.6.3",
+  "identifier": "net.kothn.srev-desktop",
+  "build": {
+    "beforeBuildCommand": "npm run custom-icon && npm run custom-js",
+    "frontendDist": "../docs"
+  },
+  "app": {
+    "withGlobalTauri": true,
+    "windows": [
+      {
+        "label": "main",
+        "title": "リアルタイム地震ビューアー v1.6.3",
+        "width": 960,
+        "height": 720,
+        "visible": false,
+        "theme": "Dark",
+        "backgroundThrottling": "disabled"
+      }
+    ]
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "homepage": "https://github.com/kotoho7/scratch-realtime-earthquake-viewer-page",
+    "copyright": "© 2025 kotoho7",
+    "longDescription": "リアルタイムに地震関連情報を閲覧できるアプリです。気象庁が発表する地震情報・緊急地震速報・津波情報等を地図上に表示し、リアルタイムに更新されます。基本的に操作不要で、全自動で各情報が表示されます。",
+    "shortDescription": "リアルタイム地震ビューアー",
+    "publisher": "kotoho7",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ],
+    "windows": {
+      "allowDowngrades": false,
+      "wix": {
+        "upgradeCode": "37684572-7d2c-555c-9c84-a0efce013db2",
+        "language": "ja-JP"
+      },
+      "nsis":{
+        "installerIcon": "icons/icon.ico",
+        "languages": ["Japanese"]
+      }
+    }
+  }
+}

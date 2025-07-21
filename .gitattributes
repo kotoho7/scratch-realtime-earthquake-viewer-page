@@ -1,0 +1,4 @@
+docs/** -linguist-documentation
+docs/assets/** linguist-detectable
+docs/assets/*.svg linguist-language=svg linguist-detectable
+docs/assets/project.json linguist-language=json linguist-detectable
